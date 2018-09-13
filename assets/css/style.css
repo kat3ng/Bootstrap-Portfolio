@@ -1,46 +1,48 @@
+
 * {
     box-sizing: border-box;
     color: #666666;
-}
-
-h1 { 
-    padding: 30px;
-    background:#4aaaa5;
-    color: #ffffff;
-}
-
-h2 {
-    border-bottom: 4px solid #dddddd;
-    font-family: Cambria, Cochin, 'Georgia', Times, Times New Roman, serif;
-    margin:20px;
-}
-
-body {
-    font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
-    background: lightgrey;
-}
-
-nav {
-    align-content: right;
-}
-
-.container {
-    margin:25px;
-    border: 3px solid lightgray;
-
-}
-
-.main-container {
-    margin:5%;
+    font-family: Arial, 'Helvetica', sans-serif;
     line-height: 1.5;
     font-size: 16px;
 }
 
+body {
+    background-image: url("https://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-8.gif");
+}
+
+.texture {
+     background-image: url("https://digitalsynopsis.com/wp-content/uploads/2013/12/subtle-patterns-website-8.gif");
+}
+
+/* navigation styling */
+h1, h3{
+    border-bottom: 1px solid gray;
+}
+
+nav {
+    margin-bottom: 10%;
+}
+/* main content*/
+
+.container {
+    margin:15%;
+    padding:30px;
+    border: 3px solid lightgray;
+    max-width: 900;
+    margin:20%;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* styles specific to contact page */
 .input-container {
+    margin: 10%;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    border: 3px solid darkgray;
+    /* background-color: #f2f2f2; */
     padding: 20px;
-    max-width: 980px;
+    max-width: 800px;
 }
 
 input[type=text], select, textarea {
@@ -64,17 +66,51 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #dddddd;
+    background-color: #666666;
 }
 
-
-footer {
-    bottom: 0;
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    margin-top: 20%;
-    background: gray;
-    border-top: 10px solid #4aaaa5;
-
+ /* styles specific to the portfolio page */
+.thumbnail {
+ position: relative;
+ margin-bottom: 40px;
+ cursor: pointer;
+ transition: all .8s ease;
 }
+/* Make thumbnail larger when hovered. */
+.thumbnail:hover {
+ transform: scale(1.1);
+}
+/* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
+.thumbnail img {
+ width: 250px;
+ height: 250px;
+ /* max-width: 100%; */
+
+ .left {
+ float: left;
+}
+
+.right {
+ float: right;
+}
+
+/* The label on the image. */
+.label {
+ position: absolute;
+ bottom: 20px;
+ left: 15px;
+ height: 60px;
+ line-height: 60px;
+ width: calc(100% - 30px);
+ text-align: center;
+ color: white;
+ font-size: 1.2em;
+ background-color: rgba(74, 170, 165, .7);
+} */
+
+  /* footer styles! */
+  /* footer {
+      background: #666666;
+      color: #ccc;
+
+  } */
